@@ -1,12 +1,10 @@
 { lib, config, pkgs, pkgs-stable, ... }:
 
 {
-  # imports = (import ./modules/programs) ++ (import ./modules/services);
+  imports = (import ./modules/programs) ++ (import ./modules/services);
 
   home.username = "victor";
   home.homeDirectory = "/home/victor";
-
-  # imports = [ ./modules/programs/ncspot.nix ];
 
   # link the configuration file in current directory to the specified location in home directory
   # home.file.".config/i3/wallpaper.jpg".source = ./wallpaper.jpg;
