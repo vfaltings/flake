@@ -39,9 +39,9 @@
   # Enable the X11 windowing system.
   services.xserver = {
     enable = true;
-    displayManager.sddm = {
+    displayManager.gdm = {
       enable = true;
-      # wayland = true; for gdm
+      wayland = true;
     };
   };
 
