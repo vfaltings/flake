@@ -39,9 +39,9 @@
   # Enable the X11 windowing system.
   services.xserver = {
     enable = true;
-    displayManager.gdm = {
+    displayManager.sddm = {
       enable = true;
-      wayland = true;
+      # wayland = true; for gdm
     };
   };
 
@@ -95,8 +95,8 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-    curl
     git
+    curl
     vim 
     wget
   ];
