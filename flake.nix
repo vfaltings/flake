@@ -29,12 +29,19 @@
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    # nixvim
+    nixvim = {
+      url = "github:pta2002/nixvim";
+      follows = "nixpkgs";
+    };
   };
 
   outputs = { self, 
     nixpkgs, 
     nixpkgs-stable, 
     home-manager, 
+    nixvim,
   ... }@inputs: {
     nixosConfigurations = {
       # By default, NixOS will try to refer the nixosConfiguration with its hostname.
@@ -65,6 +72,8 @@
             system = system;
             config.allowUnfree = true;
           };
+
+	  nixvim = nixvim;
         };
 
         modules = [

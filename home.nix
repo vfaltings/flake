@@ -1,4 +1,4 @@
-{ lib, config, pkgs, pkgs-stable, ... }:
+{ lib, config, pkgs, pkgs-stable, nixvim, ... }:
 
 {
   imports = (import ./modules/programs) ++ (import ./modules/services);
