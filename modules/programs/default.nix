@@ -11,4 +11,5 @@
 [
   ./git.nix
   ./ncspot.nix
+  ./nvim.nix
 ]
