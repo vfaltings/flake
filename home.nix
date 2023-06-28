@@ -21,13 +21,6 @@
   #     xxx
   # '';
 
-  # basic configuration of git, please change to your own
-  programs.git = {
-    enable = true;
-    userName = "Victor Faltings";
-    userEmail = "victor.faltings@gmail.com";
-  };
-
   programs.fish = {
     enable = true;
     shellAliases = {

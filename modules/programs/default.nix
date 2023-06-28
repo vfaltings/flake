@@ -10,4 +10,5 @@
 
 [
   ./ncspot.nix
+  ./git.nix
 ]
