@@ -42,6 +42,9 @@
       url = "github:pta2002/nixvim";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    # hyprland
+    hyprland.url = "github:hyprwm/Hyprland";
   };
 
   outputs = { self, 
@@ -49,6 +52,7 @@
     nixpkgs-stable, 
     home-manager, 
     nixvim,
+    hyprland,
   ... }@inputs: 
   let
     nixvimModule = nixvim.homeManagerModules.nixvim;
@@ -89,6 +93,9 @@
         modules = [
           # NixOS system configuration
           ./configuration.nix
+
+          # Hyprland
+          hyprland.nixosModules.default { programs.hyprland.enable = true; }
 
           # Home-manager module
           home-manager.nixosModules.home-manager
