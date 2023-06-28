@@ -11,5 +11,6 @@
 [
   ./git.nix
   ./ncspot.nix
-  ./nvim.nix
+  ./nixvim.nix
+  # ./nvim.nix Using nixvim instead
 ]

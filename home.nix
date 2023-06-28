@@ -40,6 +40,7 @@
     ];
     shellInit = ''
       set fish_greeting ""
+      set -U EDITOR vim
       set -U fish_color_normal CBCCC6
       set -U fish_color_command 5CCFE6
       set -U fish_color_quote BAE67E
