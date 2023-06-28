@@ -5,5 +5,5 @@
     enable = true;
     userName = "Victor Faltings";
     userEmail = "victor.faltings@gmail.com";
-  }
+  };
 }
