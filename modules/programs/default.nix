@@ -9,6 +9,6 @@
 #
 
 [
-  ./ncspot.nix
   ./git.nix
+  ./ncspot.nix
 ]
