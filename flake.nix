@@ -77,7 +77,9 @@
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
 
-            home-manager.users.victor = import ./home.nix;
+            home-manager.users.victor = {
+              imports = [ ./home.nix ];
+            };
           }
         ];
       };
