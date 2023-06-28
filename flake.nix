@@ -33,7 +33,7 @@
     # nixvim
     nixvim = {
       url = "github:pta2002/nixvim";
-      follows = "nixpkgs";
+      inputs.nixpkgs.follows = "nixpkgs";
     };
   };
 
@@ -42,7 +42,10 @@
     nixpkgs-stable, 
     home-manager, 
     nixvim,
-  ... }@inputs: {
+  ... }@inputs: 
+  let
+    nixvimModule = nixvim.homeManagerModules.nixvim;
+  in {
     nixosConfigurations = {
       # By default, NixOS will try to refer the nixosConfiguration with its hostname.
       # However, the configuration name can also be specified using `sudo nixos-rebuild switch --flake /path/to/flakes/directory#<name>`.
@@ -87,7 +90,7 @@
             home-manager.useUserPackages = true;
 
             home-manager.users.victor = {
-              imports = [ ./home.nix ];
+              imports = [ ./home.nix nixvimModule ];
             };
           }
         ];
