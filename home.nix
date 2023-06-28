@@ -152,6 +152,10 @@
     pciutils # lspci
     usbutils # lsusb
 
+    # hyprland stuff
+    wofi
+    dunst
+
     # Fonts
     (pkgs.nerdfonts.override { fonts = [ "Meslo" ]; })
   ];

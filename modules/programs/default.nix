@@ -10,6 +10,7 @@
 
 [
   ./git.nix
+  ./hyprland.nix
   ./ncspot.nix
   ./nixvim.nix
   # ./nvim.nix Using nixvim instead
