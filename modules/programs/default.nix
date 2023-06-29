@@ -14,4 +14,5 @@
   ./ncspot.nix
   ./nixvim.nix
   # ./nvim.nix Using nixvim instead
+  ./starship.nix
 ]
