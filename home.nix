@@ -6,6 +6,11 @@
   home.username = "victor";
   home.homeDirectory = "/home/victor";
 
+  programs.eww = {
+    enable = true;
+    configDir = ./eww-configDir;
+  };
+
   # link the configuration file in current directory to the specified location in home directory
   # home.file.".config/i3/wallpaper.jpg".source = ./wallpaper.jpg;
 
@@ -26,18 +31,6 @@
     shellAliases = {
       ls = "exa --icons";
     };
-    plugins = [
-      {
-        # TODO: Can't get fish to actually use this prompt
-        name = "aight";
-        src = pkgs.fetchFromGitHub {
-          owner = "abingham";
-          repo = "aight-fish-theme";
-          rev = "ea759909db2d3b096bc32a560b717f946a566fcd";
-          sha256 = "MUTNNmsM7XvR7h/xCrsUdmSlCBLaoIGVpne3a+Fij0s=";
-        };
-      }
-    ];
     shellInit = ''
       set fish_greeting ""
       set -U EDITOR vim
@@ -80,12 +73,6 @@
       set -U fish_color_keyword 
     '';
   };
-  # Supposed to source the plugin so that fish uses it, doesn't work for aight
-  xdg.configFile."fish/conf.d/plugin-aight.fish".text = lib.mkAfter ''
-  for f in $plugin_dir/*.fish
-    source $f
-  end
-  '';
 
   fonts.fontconfig.enable = true;
 
@@ -155,6 +142,9 @@
     # hyprland stuff
     wofi
     dunst
+
+    python3
+    jq
 
     # Fonts
     (pkgs.nerdfonts.override { fonts = [ "Meslo" ]; })
