@@ -6,11 +6,6 @@
   home.username = "victor";
   home.homeDirectory = "/home/victor";
 
-  programs.eww = {
-    enable = true;
-    configDir = ./eww-configDir;
-  };
-
   # link the configuration file in current directory to the specified location in home directory
   # home.file.".config/i3/wallpaper.jpg".source = ./wallpaper.jpg;
 
@@ -142,6 +137,7 @@
     # hyprland stuff
     wofi
     dunst
+    eww-wayland
 
     python3
     jq

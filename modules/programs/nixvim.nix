@@ -19,6 +19,7 @@
     extraPlugins = with pkgs.vimPlugins; [ 
       neovim-ayu 
       vim-parinfer
+      yuck-vim
     ];
 
     # Theme
@@ -33,6 +34,10 @@
     };
 
     # Plugins
+
+    plugins.nvim-autopairs = {
+      enable = true;
+    };
 
     plugins.lualine = {
       enable = true;
