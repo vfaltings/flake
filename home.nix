@@ -6,6 +6,13 @@
   home.username = "victor";
   home.homeDirectory = "/home/victor";
 
+  #Add support for ./local/bin
+  # Just to use lvim
+  # Remove once neovim configured
+  home.sessionPath = [
+  "$HOME/.local/bin"
+  ];
+
   # link the configuration file in current directory to the specified location in home directory
   # home.file.".config/i3/wallpaper.jpg".source = ./wallpaper.jpg;
 
@@ -138,12 +145,16 @@
     wofi
     dunst
     eww-wayland
+    swaybg
 
     python3
     jq
+    playerctl
+    spotify-tui
 
-    # Fonts
-    (pkgs.nerdfonts.override { fonts = [ "Meslo" ]; })
+    nodejs_20
+    rustup
+    python311Packages.pip
   ];
 
   # This value determines the home Manager release that your

@@ -246,6 +246,21 @@
         "type": "github"
       }
     },
+    "nur": {
+      "locked": {
+        "lastModified": 1688154273,
+        "narHash": "sha256-EZoa6P5VsOsfHh5QQLaMPlXMqdMAQku+4A16Umx2kW8=",
+        "owner": "nix-community",
+        "repo": "NUR",
+        "rev": "ae29b5d49355311d07560f2024ab7dee3f167c9a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nix-community",
+        "repo": "NUR",
+        "type": "github"
+      }
+    },
     "poetry2nix": {
       "inputs": {
         "flake-utils": [
@@ -304,7 +319,8 @@
         "hyprland": "hyprland",
         "nixpkgs": "nixpkgs_2",
         "nixpkgs-stable": "nixpkgs-stable",
-        "nixvim": "nixvim"
+        "nixvim": "nixvim",
+        "nur": "nur"
       }
     },
     "systems": {

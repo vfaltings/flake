@@ -100,8 +100,17 @@
     clang
     cmake
     curl
+    gnumake
+    inter
+    pulseaudio
     vim 
     wget
+  ];
+
+  fonts.fonts = with pkgs; [
+    config.nur.repos.sagikazarmark.sf-pro
+    inter
+    (nerdfonts.override { fonts = [ "Meslo" "Hack" ]; })
   ];
 
   programs.fish.enable = true;

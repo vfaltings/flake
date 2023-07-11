@@ -15,9 +15,4 @@
   programs.qutebrowser = {
     enable = true; 
   };
-
-  home.file.".config/qutebrowser" = {
-    source = ../../dotfiles/qutebrowser;
-    recursive = true;
-  };
 }

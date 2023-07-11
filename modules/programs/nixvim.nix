@@ -35,6 +35,14 @@
 
     # Plugins
 
+    plugins.nvim-colorizer = {
+      enable = true;
+    };
+
+    plugins.bufferline = {
+      enable = true;
+    };
+
     plugins.nvim-autopairs = {
       enable = true;
     };

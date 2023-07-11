@@ -31,6 +31,9 @@
     # Official NixOS package source, stable branch for potential backups
     nixpkgs-stable.url = "github:nixos/nixpkgs/nixos-23.05";
 
+    # NUR
+    nur.url = github:nix-community/NUR;
+
     # home-manager, used for managing user configuration
     home-manager = {
       url = "github:nix-community/home-manager";
@@ -50,6 +53,7 @@
   outputs = { self, 
     nixpkgs, 
     nixpkgs-stable, 
+    nur,
     home-manager, 
     nixvim,
     hyprland,
@@ -91,6 +95,9 @@
         };
 
         modules = [
+          # NUR
+          nur.nixosModules.nur
+
           # NixOS system configuration
           ./configuration.nix
 
@@ -104,7 +111,12 @@
             home-manager.useUserPackages = true;
 
             home-manager.users.victor = {
-              imports = [ ./home.nix nixvimModule ];
+              imports = [ 
+                # NUR
+                nur.nixosModules.nur
+
+                ./home.nix 
+                nixvimModule ];
             };
           }
         ];
