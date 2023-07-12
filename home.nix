@@ -123,6 +123,7 @@
 
     # productivity
     glow # markdown previewer in terminal
+    teams
 
     htop
     btop  # replacement of htop/nmon
