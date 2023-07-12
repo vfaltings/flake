@@ -134,7 +134,7 @@
     udevmonConfig = ''
     - JOB: "${pkgs.interception-tools}/bin/intercept -g $DEVNODE | ${pkgs.interception-tools-plugins.dual-function-keys}/bin/dual-function-keys -c /etc/dual-function-keys.yaml | ${pkgs.interception-tools}/bin/uinput -d $DEVNODE"
       DEVICE:
-        NAME: "Kingston HyperX Alloy FPS Pro Mechanical Gaming Keyboard"
+        NAME: "AT Translated Set 2 keyboard"
     '';
   };
 
