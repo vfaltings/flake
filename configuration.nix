@@ -105,7 +105,17 @@
     pulseaudio
     vim 
     wget
+
+    discord
   ];
+
+  nixpkgs.overlays =
+  let
+    myOverlay = self: super: {
+      discord = super.discord.override { withVencord = true; };
+    };
+  in
+  [ myOverlay ];
 
   fonts.fonts = with pkgs; [
     config.nur.repos.sagikazarmark.sf-pro

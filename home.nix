@@ -30,9 +30,6 @@
 
   programs.fish = {
     enable = true;
-    shellAliases = {
-      ls = "exa --icons";
-    };
     shellInit = ''
       set fish_greeting ""
       set -U EDITOR vim
@@ -91,7 +88,6 @@
 
     # utils
     ripgrep # recursively searches directories for a regex pattern
-    exa # A modern replacement for ‘ls’
     fzf # A command-line fuzzy finder
     tldr
 
@@ -142,6 +138,10 @@
     pciutils # lspci
     usbutils # lsusb
 
+    # apps
+    # discord
+    spotify
+
     # hyprland stuff
     wofi
     dunst
@@ -151,12 +151,21 @@
     python3
     jq
     playerctl
-    spotify-tui
 
     nodejs_20
     rustup
     python311Packages.pip
   ];
+
+  # Vencord
+  # nixpkgs.overlays =
+  #   let
+  #     discordOverlay = self: super: {
+  #       discord = super.discord.override { withOpenASAR = true; withVencord = true; };
+  #     };
+  #   in
+  #   [ discordOverlay ];
+
 
   # This value determines the home Manager release that your
   # configuration is compatible with. This helps avoid breakage

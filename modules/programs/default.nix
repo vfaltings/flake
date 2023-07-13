@@ -9,6 +9,7 @@
 #
 
 [
+  ./exa.nix
   ./git.nix
   ./hyprland.nix
   ./ncspot.nix
