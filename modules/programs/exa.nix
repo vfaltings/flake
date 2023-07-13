@@ -4,9 +4,7 @@
 # flake.nix
 # └─ ./modules
 #    └─ ./programs
-#       └─ ./qutebrowser.nix *
-# └─ ./dotfiles
-#    └─ ./qutebrowser
+#       └─ ./exa.nix *
 #
 
 { pkgs, ... }:

@@ -10,6 +10,7 @@
 
 [
   ./exa.nix
+  ./fish.nix
   ./git.nix
   ./hyprland.nix
   ./ncspot.nix
