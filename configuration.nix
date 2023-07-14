@@ -102,9 +102,11 @@
     curl
     gnumake
     inter
+    pinentry
     pulseaudio
     vim 
     wget
+    wl-clipboard
 
     discord
   ];

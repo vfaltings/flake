@@ -58,8 +58,10 @@
 
     # misc
     file
-    which
+    gnupg
+    pass
     tree
+    which
     # gnused
     # gnutar
     # gawk
@@ -95,6 +97,7 @@
 
     # apps
     spotify
+    spotify-tui
 
     # hyprland stuff
     wofi
