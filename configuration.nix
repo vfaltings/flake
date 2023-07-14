@@ -111,6 +111,7 @@
     discord
   ];
 
+  # Vencord overlay
   nixpkgs.overlays =
   let
     myOverlay = self: super: {
@@ -137,6 +138,9 @@
   #   enable = true;
   #   enableSSHSupport = true;
   # };
+
+  # Fix for swaylock
+  security.pam.services.swaylock = {}; 
 
   # List services that you want to enable:
 

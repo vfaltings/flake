@@ -104,6 +104,7 @@
     dunst
     eww-wayland
     swaybg
+    swaylock-effects
 
     python3
     jq
