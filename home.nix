@@ -4,20 +4,29 @@
 let
   myswaylock = pkgs.writeShellScriptBin "myswaylock" ''
     swaylock  \
-           --screenshots \
-           --clock \
            --indicator \
-           --indicator-radius 100 \
+           --clock \
+           --timestr "%H:%M" \
+           -i ~/.config/wallpapers/foggy-valley.jpg \
+           --bs-hl-color fad07b \
+           --font "SF Pro Bold" \
+           --indicator-radius 80 \
            --indicator-thickness 7 \
-           --effect-blur 7x5 \
-           --effect-vignette 0.5:0.5 \
-           --ring-color 3b4252 \
-           --key-hl-color 880033 \
+           --inside-color 212733f0 \
+           --inside-clear-color fad07bf0 \
+           --inside-ver-color 6dcbfaf0 \
+           --inside-wrong-color ed8274f0 \
+           --key-hl-color fad07b \
            --line-color 00000000 \
-           --inside-color 00000088 \
-           --separator-color 00000000 \
-           --grace 2 \
-           --fade-in 0.3
+           --separator-color 212733 \
+           --ring-color 191e2a \
+           --ring-clear-color ffd580 \
+           --ring-ver-color 73d0ff \
+           --ring-wrong-color f28779 \
+           --text-color fad07b \
+           --effect-vignette 0.6:1 \
+           --effect-blur 20x2 \
+           --grace 5 \
   '';
 in
 {
@@ -120,6 +129,7 @@ in
     spotify-tui
 
     # hyprland stuff
+    brightnessctl
     wofi
     dunst
     eww-wayland

@@ -1,5 +1,5 @@
 use_nerdfont = true
-notify = false # TODO: if configured properly could be nice
+notify = true # TODO: if configured properly could be nice
 
 [theme]
 background = "background"
