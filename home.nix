@@ -132,6 +132,7 @@ in
     brightnessctl
     wofi
     dunst
+    libnotify
     eww-wayland
     swaybg
     swaylock-effects

@@ -145,6 +145,16 @@
 
   # List services that you want to enable:
 
+  services.tlp = {
+    enable = true;
+    settings = {
+      START_CHARGE_THRESH_BAT0 = 5;
+      STOP_CHARGE_THRESH_BAT0 = 80;
+      START_CHARGE_THRESH_BAT1 = 5;
+      STOP_CHARGE_THRESH_BAT1 = 80;
+    };
+  };
+
   services.interception-tools = {
     enable = true;
     plugins = [ pkgs.interception-tools-plugins.dual-function-keys ];
