@@ -106,6 +106,7 @@ in
     # productivity
     glow # markdown previewer in terminal
     teams
+    zathura
 
     htop
     btop  # replacement of htop/nmon

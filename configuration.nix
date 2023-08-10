@@ -148,9 +148,9 @@
   services.tlp = {
     enable = true;
     settings = {
-      START_CHARGE_THRESH_BAT0 = 5;
+      START_CHARGE_THRESH_BAT0 = 7;
       STOP_CHARGE_THRESH_BAT0 = 80;
-      START_CHARGE_THRESH_BAT1 = 5;
+      START_CHARGE_THRESH_BAT1 = 7;
       STOP_CHARGE_THRESH_BAT1 = 80;
     };
   };

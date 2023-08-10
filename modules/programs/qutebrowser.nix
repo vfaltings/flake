@@ -22,6 +22,10 @@
       };
     };
 
+    settings = {
+      colors.webpage.darkmode.enabled = true;
+    };
+
     extraConfig = ''
       # base16-qutebrowser (https://github.com/theova/base16-qutebrowser)
       # Scheme name: Ayu Mirage
