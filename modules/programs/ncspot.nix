@@ -16,8 +16,8 @@
     enable = true; 
   };
 
-  home.file.".config/ncspot" = {
-    source = ../../dotfiles/ncspot;
-    recursive = true;
-  };
+  # home.file.".config/ncspot" = {
+  #   source = ../../dotfiles/ncspot;
+  #   recursive = true;
+  # };
 }

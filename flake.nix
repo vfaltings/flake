@@ -48,15 +48,20 @@
 
     # hyprland
     hyprland.url = "github:hyprwm/Hyprland";
+
+    # hardware conf
+    nixos-hardware.url = "github:NixOS/nixos-hardware/master";
   };
 
-  outputs = { self, 
+  outputs = { 
+    self, 
     nixpkgs, 
     nixpkgs-stable, 
     nur,
     home-manager, 
     nixvim,
     hyprland,
+    nixos-hardware,
   ... }@inputs: 
   let
     nixvimModule = nixvim.homeManagerModules.nixvim;
@@ -100,6 +105,9 @@
 
           # NixOS system configuration
           ./configuration.nix
+
+          # Hardware conf
+          nixos-hardware.nixosModules.lenovo-thinkpad-t480
 
           # Hyprland
           hyprland.nixosModules.default { programs.hyprland.enable = true; }

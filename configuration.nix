@@ -121,7 +121,7 @@
   in
   [ myOverlay ];
 
-  fonts.fonts = with pkgs; [
+  fonts.packages = with pkgs; [
     config.nur.repos.sagikazarmark.sf-pro
     inter
     (nerdfonts.override { fonts = [ "Meslo" "Hack" ]; })
@@ -140,18 +140,18 @@
   #   enableSSHSupport = true;
   # };
 
+  # List services that you want to enable:
+
   # Fix for swaylock
   security.pam.services.swaylock = {}; 
-
-  # List services that you want to enable:
 
   services.tlp = {
     enable = true;
     settings = {
       START_CHARGE_THRESH_BAT0 = 7;
-      STOP_CHARGE_THRESH_BAT0 = 80;
+      STOP_CHARGE_THRESH_BAT0 = 90;
       START_CHARGE_THRESH_BAT1 = 7;
-      STOP_CHARGE_THRESH_BAT1 = 80;
+      STOP_CHARGE_THRESH_BAT1 = 90;
     };
   };
 
