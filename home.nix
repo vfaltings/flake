@@ -145,8 +145,10 @@ in
     playerctl
 
     nodejs_20
-    rustup
     python311Packages.pip
+    rustup
+    sbt
+    scala
   ];
 
   # Environment variables
