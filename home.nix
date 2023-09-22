@@ -145,6 +145,7 @@ in
     playerctl
 
     clang
+    clang-tools
     nodejs_20
     python311Packages.pip
     rustup
