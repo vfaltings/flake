@@ -144,6 +144,7 @@ in
     jq
     playerctl
 
+    clang
     nodejs_20
     python311Packages.pip
     rustup
