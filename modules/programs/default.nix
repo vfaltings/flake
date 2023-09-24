@@ -14,8 +14,8 @@
   ./git.nix
   ./hyprland.nix
   ./ncspot.nix
-  ./nixvim.nix
-  # ./nvim.nix Using nixvim instead
+  # ./nixvim.nix
+  ./nvim.nix
   ./qutebrowser.nix
   ./starship.nix
 ]
