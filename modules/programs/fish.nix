@@ -23,6 +23,10 @@
         };   
       }
     ];
+    shellAliases = {
+      "vim" = "lvim";
+      "vi" = "lvim";
+    };
     shellInit = ''
       set fish_greeting ""
       set -U EDITOR vim
