@@ -40,6 +40,7 @@ in
   # Remove once neovim configured
   home.sessionPath = [
     "$HOME/.local/bin"
+    "$HOME/Downloads/repos/stainless"
   ];
 
   # link the configuration file in current directory to the specified location in home directory
@@ -71,6 +72,8 @@ in
     p7zip
 
     # utils
+    bacon
+    evcxr
     ripgrep # recursively searches directories for a regex pattern
     fzf # A command-line fuzzy finder
     tldr
@@ -88,12 +91,12 @@ in
     ipcalc # it is a calculator for the IPv4/v6 addresses
 
     # misc
-    evcxr
     file
     gnupg
     pass
     tree
     which
+    z3
     # gnused
     # gnutar
     # gawk
@@ -151,10 +154,13 @@ in
     # clang-tools
     gcc
     nodejs_20
+    jdk17
     python311Packages.pip
     rustup
     sbt
-    scala
+    # scala
+    dotty
+    scala-cli
 
     # LSPs
     lua-language-server
