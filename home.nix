@@ -111,7 +111,6 @@ in
 
     # productivity
     glow # markdown previewer in terminal
-    teams
     zathura
 
     htop
