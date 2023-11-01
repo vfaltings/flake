@@ -18,4 +18,5 @@
   ./nvim.nix
   ./qutebrowser.nix
   ./starship.nix
+  ./vscode.nix
 ]
