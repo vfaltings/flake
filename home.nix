@@ -168,6 +168,7 @@ in
   # Environment variables
   home.sessionVariables = {
     EDITOR = "lvim";
+    NIXOS_OZONE_WL = "1";
   };
 
   # This value determines the home Manager release that your
