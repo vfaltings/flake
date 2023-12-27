@@ -101,6 +101,7 @@
     clang
     cmake
     curl
+    gdb
     gnumake
     inter
     pinentry
